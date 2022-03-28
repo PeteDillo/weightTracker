@@ -11,7 +11,8 @@ function handleSubmit(event){
         weight: weight,
         date: date
     }
-    console.log(newEntry)
+    console.log({newEntry})
+    props.setEntries(newEntry)
 }
 
     return ( 
