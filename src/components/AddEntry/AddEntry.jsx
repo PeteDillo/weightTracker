@@ -15,22 +15,32 @@ const AddEntryForm = (props) => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className='form-grid'>
+    <form onSubmit={handleSubmit} className="form-grid">
       <div className="form-group">
         <label>Weight</label>
-        <input className="form-control" type="number"
+        <input
+          className="form-control"
+          type="number"
           value={weight}
           onChange={(event) => setWeight(parseFloat(event.target.value))}
         ></input>
       </div>
       <div className="form-group">
         <label>Date</label>
-        <input className="form-control" type="date"
+        <input
+          className="form-control"
+          type="date"
           value={date}
           onChange={(event) => setDate(event.target.value)}
         ></input>
       </div>
-      <button type="submit" className="btn btn-primary" style={{'margin-top':'1em'}}>Add</button>
+      <button
+        type="submit"
+        className="btn btn-primary"
+        style={{ "margin-top": "1em" }}
+      >
+        Add
+      </button>
     </form>
   );
 };
